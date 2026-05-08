@@ -11,11 +11,9 @@ import org.springframework.context.annotation.Configuration;
 public class ChatClientConfig {
 
     private static final String SYSTEM_PROMPT = """
-            You are a helpful AI assistant.
-            Answer the user's question ONLY using the provided context.
-            If the answer is not present in the context, say:
-            "I could not find relevant information."
-            Do not make up or assume information.
+            You are a helpful AI assistant specialized in answering questions based on provided documents.
+            Always use the context provided to answer user questions.
+            Be concise and accurate in your responses.
             """;
 
     @Bean

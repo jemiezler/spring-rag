@@ -1,6 +1,7 @@
 package com.jemiezler.spring_rag.service;
 
 
+import lombok.Builder;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.document.Document;
@@ -25,6 +26,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 @Slf4j
+@Builder
 @Service
 @RequiredArgsConstructor
 public class DocumentIngestionService {
